@@ -1,18 +1,17 @@
 use std::fs;
 
-/*
-Purpose: to read a text file and print out the frequencies of each word
-Credits:
-- Gemini
-    - Reading files
-- w3Schools
-*/
-
 fn main() {
 
-    let textFile = "input.txt";
-    let contents = fs::read_to_string(textFile)
+    let text_file = "input.txt";
+    let contents = fs::read_to_string(text_file)
         .expect("File has been read");
 
     println!("{}", contents);
+
+    // list of characters that may appear in traditional text, which will be removed to simplify things
+    let junk_chars = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "+", "[", "]", "{", "}", "|", "\\", ":", ";", "\"", "\'", "<", ">", "?", "/", ".", ",", "~", "`"];
+
+    for junk_char in junk_chars {
+        let clean_text = contents.replace(junk_char, "");
+    }
 }
