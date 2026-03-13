@@ -1,15 +1,10 @@
 # SwitFreq
-A word frequency program made in Swift
+A word frequency program made in ???
 
 # How to Install
 
 1. Clone the repository on your IDE
-2. Install Swift on your operating system
-- [Install page for Swift](https://www.swift.org/install/macos/)
-3. Run Swift
-~~~sh
-swift main.swift
-~~~
+2. ???
 
 # How it Works
 
